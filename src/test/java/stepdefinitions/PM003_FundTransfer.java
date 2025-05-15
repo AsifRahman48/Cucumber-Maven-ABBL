@@ -142,7 +142,7 @@ public class PM003_FundTransfer extends Base {
         Operations.sendText(PG004_FundTransfer.withinTransferDetailsToAccountField, accountNumber, driver);
         Operations.verifyElementIsPresent(PG004_FundTransfer.transferDetailsTransferAmount, driver);
         Operations.click(PG004_FundTransfer.transferDetailsTransferAmount, driver);
-        Operations.sendText(PG004_FundTransfer.transferDetailsTransferAmount, accountNumber, driver);
+        Operations.sendText(PG004_FundTransfer.transferDetailsTransferAmount, amount, driver);
         Operations.sendText(PG004_FundTransfer.transferDetailsRemarks,"AutomatedTest", driver);
         Operations.waitUntilElementIsClickable(PG004_FundTransfer.transferDetailsNextButton, driver);
         Operations.click(PG004_FundTransfer.transferDetailsNextButton, driver);
@@ -153,7 +153,7 @@ public class PM003_FundTransfer extends Base {
         Operations.waitUntilElementIsVisible(PG004_FundTransfer.fundTransferReviewPageTitle, driver);
         Operations.verifyElementIsPresent(PG004_FundTransfer.fundTransferReviewPageTitle, driver);
         Operations.click(PG004_FundTransfer.fundTransferAuthenticationTypeSMS, driver);
-        Operations.click(PG004_FundTransfer.ownFundTransferTermsAndConditionCheckbox, driver);
+        Operations.click(PG004_FundTransfer.withinFundTransferTermsAndConditionCheckbox, driver);
         Operations.click(PG004_FundTransfer.transferDetailsNextButton, driver);
         Operations.waitUntilElementIsVisible(PG004_FundTransfer.fundTransferOTPInput, driver);
         Operations.verifyElementIsPresent(PG004_FundTransfer.fundTransferOTPInput, driver);

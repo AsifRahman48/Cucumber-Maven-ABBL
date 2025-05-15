@@ -51,11 +51,11 @@ public class PM002_Dashboard extends Base {
         Operations.waitUntilElementIsClickable(PG003_DashboardOR.dashboardAccountsStatementFromDate, driver);
         Operations.click(PG003_DashboardOR.dashboardAccountsStatementFromDate, driver);
         Operations.clear(PG003_DashboardOR.dashboardAccountsStatementFromDate, driver);
-        Operations.sendText(PG003_DashboardOR.dashboardAccountsStatementFromDate,"01/01/2023", driver);
+        Operations.sendText(PG003_DashboardOR.dashboardAccountsStatementFromDate,"01/06/2024", driver);
         Operations.waitUntilElementIsClickable(PG003_DashboardOR.dashboardAccountsStatementToDate, driver);
         Operations.click(PG003_DashboardOR.dashboardAccountsStatementToDate, driver);
         Operations.clear(PG003_DashboardOR.dashboardAccountsStatementToDate, driver);
-        Operations.sendText(PG003_DashboardOR.dashboardAccountsStatementToDate,"01/06/2024", driver);
+        Operations.sendText(PG003_DashboardOR.dashboardAccountsStatementToDate,"30/06/2024", driver);
         Operations.waitUntilElementIsClickable(PG003_DashboardOR.dashboardAccountsStatementSubmitBtn, driver);
         Operations.click(PG003_DashboardOR.dashboardAccountsStatementSubmitBtn, driver);
         Operations.waitUntilElementIsClickable(PG003_DashboardOR.dashboardAccountsStatementDownloadBtn, driver);

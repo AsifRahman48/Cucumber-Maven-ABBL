@@ -1,11 +1,14 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import objectRepository.PG002_LoginPageOR;
 import objectRepository.PG001_SplashPageOR;
 import objectRepository.PG003_DashboardOR;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import utils.Base;
 import utils.Operations;
 
@@ -46,6 +49,11 @@ public class PM001_SplashAndLogin extends Base {
         Operations.sendText(PG002_LoginPageOR.inputFieldPassword, password, driver);
         Operations.click(PG002_LoginPageOR.loginBtn, driver);
 //        Operations.waitForPageToLoad(driver);
+    }
+
+    @But("Login should fail {string}")
+    public void loginShouldFail(String errorMessage) {
+        Operations.matchText(PG002_LoginPageOR.usernameAndPasswordMismatch, errorMessage, driver);
     }
 
     @Then ("I should see OTP Channel Selection Modal for Device Binding {string}")
