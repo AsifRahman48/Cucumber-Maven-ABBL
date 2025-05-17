@@ -82,7 +82,7 @@ public class PM004_ChequeBookRequest extends Base {
         Operations.waitUntilElementIsVisible(PG005_ChequeBookRequest.EnterOTP, driver);
         Operations.sendText(PG005_ChequeBookRequest.EnterOTP,OTP, driver);
     }
-    @Then("I can click on the next button on OTP Page")
+    @Then("I can click on the next button on the OTP Page")
     public void iCanClickOnOTPNextButton() {
         Operations.waitUntilElementIsVisible(PG005_ChequeBookRequest.OTPNextButton, driver);
         Operations.click(PG005_ChequeBookRequest.OTPNextButton, driver);

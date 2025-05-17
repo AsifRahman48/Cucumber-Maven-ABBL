@@ -1,4 +1,4 @@
-Feature: Cheque Book Request
+Feature: Callback Request
 
   Scenario: Verify navigate to ABDirect Splash & Login and titles of the pages
     Given I open the browser
@@ -14,18 +14,13 @@ Feature: Cheque Book Request
     Then I navigate to my dashboard
 
 
-  Scenario: Verify Successful CheckBook Request
-    Then I navigate to the Services
-    Then I navigate to the Account Services
-    Then I navigate to the Cheque Book Request
-    Then I can choose your Account
-    Then I can select Leaf Size
-    Then I can select Division
-    Then I can select District
-    Then I can select Delivery Point
-    Then I can select Delivery Location
-    Then I can click on the next button
-    Then I can click on the Terms & Conditions checkbox and click on the Send OTP button
-    Then Enter OTP "1111"
-    Then I can click on the next button on the OTP Page
-    Then I can click on the Go to Home button
+  Scenario: Verify Successful Callback Request
+    Then I navigate to the Services for Callback Request
+    Then I navigate to the Account Services for Callback Request
+    Then I navigate to the Callback Request
+    Then I can select Start Date
+    Then I can select Start Time
+    Then I can select End Date
+    Then I can select End Time
+    Then I Can enter Query "Test By Asif"
+    Then I can click on the Request button
