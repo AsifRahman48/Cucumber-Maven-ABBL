@@ -8,14 +8,14 @@ public class PG006_CallbackRequest {
     public static By navBarCallbackRequest = By.xpath("//span[normalize-space()='Callback Request']");
 
     public static By startDate = By.xpath("/html/body/app-root/layout/classy-layout/div/div[2]/app-cheque-stop-request/div/div/form/div[1]/div/mat-form-field[1]/div[1]/div[2]/div[2]");
-    public static By SelectStartDate = By.xpath("//span[normalize-space()='31']");
+    public static By SelectStartDate = By.xpath("//span[normalize-space()='22']");
 
     public static By startTime = By.xpath("/html/body/app-root/layout/classy-layout/div/div[2]/app-cheque-stop-request/div/div/form/div[1]/div/mat-form-field[2]/div[1]/div[2]/div[2]");
     public static By SelectStartTime = By.xpath("//span[normalize-space()='3']");
     public static By OKButton = By.xpath("//span[normalize-space()='OK']");
 
     public static By endDate = By.xpath("/html/body/app-root/layout/classy-layout/div/div[2]/app-cheque-stop-request/div/div/form/div[2]/div/mat-form-field[1]/div[1]/div[2]/div[2]");
-    public static By SelectEndDate = By.xpath("//span[normalize-space()='31']");
+    public static By SelectEndDate = By.xpath("//span[normalize-space()='26']");
 
     public static By endTime = By.xpath("/html/body/app-root/layout/classy-layout/div/div[2]/app-cheque-stop-request/div/div/form/div[2]/div/mat-form-field[2]/div[1]/div[2]/div[2]");
     public static By SelectEndTime = By.xpath("//span[normalize-space()='4']");
